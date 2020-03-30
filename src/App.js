@@ -38,7 +38,7 @@ handleSubmit(e){
         </form>
 
         {/* <img src={logo}className="App-logo" alt="logo"/> */}
-        <img src={WireframePAW}  alt="logo"/>
+        <img id="PawWireframe" src={WireframePAW}  alt="logo"/>
       </header>
     </div> );
   }
