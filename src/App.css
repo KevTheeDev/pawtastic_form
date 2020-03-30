@@ -12,6 +12,11 @@ h1{
   color: black;
 }
 
+#formflexbox {
+  display: flexbox;
+  flex-direction: column 1fr 1fr;
+}
+
 #PawWireframe {
   margin-top: 15in;
   height: 5in;
