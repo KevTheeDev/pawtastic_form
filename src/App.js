@@ -79,12 +79,12 @@ class Pawtastic extends React.Component {
           </form>
 
           </form>
-          
+           
           <div className='btnwrap'>          
           <button id="backBtn" >Back</button>
           <button id="nextBtn" >Next</button>
           </div>
-
+ 
         </div>
         
         {/* <img src={logo}className="App-logo" alt="logo"/> */}
