@@ -16,6 +16,14 @@ class Pawtastic extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+handleChange(e){
+  this.setState({ value: e.target.value})
+}
+
+handleSubmit(e){
+  e.preventDefault();
+}
+
   render() { 
     return (     
     <div className="App">
