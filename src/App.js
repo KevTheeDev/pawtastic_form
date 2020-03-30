@@ -49,31 +49,22 @@ render() {
               <input id="formSub" placeholder="Pet Name" 
               value={this.state.breed} 
               onChange={e => this.setState({breed: e.target.value})} />
-            </form>
 
-
-            <form>
               <p>Birthday</p>
               <input id="formSub" placeholder="Pet Name" 
               value={this.state.birthday} 
               onChange={e => this.setState({birthday: e.target.value})} />
-            </form>
 
-            <form>
               <p>Gender</p>
               <input id="formSub" placeholder="Pet Name" 
               value={this.state.gender} 
               onChange={e => this.setState({gender: e.target.value})} />
-            </form>
 
-            <form>
               <p>Spayed or Neutered</p>
               <input id="formSub" placeholder="Pet Name" 
               value={this.state.spayed_Neutered} 
               onChange={e => this.setState({spayed_Neutered: e.target.value})} />
-            </form>
 
-            <form>
               <p>Weight</p>
               <input id="formSub" placeholder="Pet Name" 
               value={this.state.weight} 
