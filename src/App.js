@@ -30,6 +30,9 @@ handleSubmit(e){
       <header className="App-header">
         <form onSubmit = {this.handleSubmit}>
           <label>
+            Name: 
+            {/* capture what the user is inputing with ".value" */}
+          {/* without onChange the values are not updated as the user types*/}
           </label>
         </form>
 
