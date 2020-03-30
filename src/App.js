@@ -1,7 +1,7 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
+import WireframePAW from './WireframePAW.png';
 import './App.css';
-// import React, { Component } from 'react';
-import React from 'react';
+import React, { Component } from 'react';
 
 class Pawtastic extends React.Component {
   constructor(props) {
@@ -12,13 +12,13 @@ class Pawtastic extends React.Component {
     return (     
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <img src={logo}className="App-logo" alt="logo"/>
+        <img src={WireframePAW}  />
       </header>
-    </div> 
-    );
+    </div> );
   }
 }
-  
+ 
 export default Pawtastic;
 
 
