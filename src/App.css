@@ -13,6 +13,7 @@ h1{
 }
 
 #formflexbox {
+  background-color: #d6788680;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
