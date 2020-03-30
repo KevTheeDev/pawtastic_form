@@ -8,8 +8,14 @@ class Pawtastic extends React.Component {
   // have acccess to usr value
   // add empty text because we are expecting text
   // this.state = { value: " "}
-  state = { value: " :name"
-      
+  state = { 
+    name: ' ',
+    breed: ' ',
+    birthday: ' ',
+    gender: ' ',
+    spayed_Neutered: ' ',
+    weight: ' ',
+
   }
   
   
@@ -28,9 +34,15 @@ class Pawtastic extends React.Component {
           <form>
             <label>
               Name: 
-              {/* SUPPOSED capture what the user is inputing with ".value" */}
               {/* without onChange on Submit the values are not updated as the user types*/}
-            <input />
+            <input placeholder='Pet Name' 
+            value={this.state.name} 
+            onChange={e => this.setState({name: e.target.value})} />
+            
+            {/* // capture what user is inputing with ".value" 
+            // value = this.state.'value' 
+            // adds event listener (e)
+            // this.setState is used to change what's in state because if not it'll remain immutable */}
             </label>
           </form>
         </div>

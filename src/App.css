@@ -1,8 +1,5 @@
 .App-header {
-  background-color: #282c34;
-  height: 15in;
-  width: 10in;
-  max-height: 9in;
+  /* background-color: #a1b2d4; */
   /* max-width: 20px; */
   display: flex;
   flex-direction: column;
