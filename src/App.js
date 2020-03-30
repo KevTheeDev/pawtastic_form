@@ -30,20 +30,17 @@ class Pawtastic extends React.Component {
     <div className="App">
       <header className="App-header">
         <div>
-          {/* <form onSubmit = {this.handleSubmit}> */}
           <form>
-            <label>
-              Name: 
-              {/* without onChange on Submit the values are not updated as the user types*/}
-            <input placeholder='Pet Name' 
+            {/* without onChange on Submit the values are not updated as the user types*/}
+            <p>Name</p>
+            <input id="formSub" placeholder="Pet Name" 
             value={this.state.name} 
             onChange={e => this.setState({name: e.target.value})} />
-            
+
             {/* // capture what user is inputing with ".value" 
             // value = this.state.'value' 
             // adds event listener (e)
             // this.setState is used to change what's in state because if not it'll remain immutable */}
-            </label>
           </form>
         </div>
         
