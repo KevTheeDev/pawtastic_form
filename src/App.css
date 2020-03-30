@@ -19,3 +19,25 @@
   height: .5in;
 }
 
+.btnwrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  height: .5in;
+}
+
+#backBtn{
+  background-color: rgb(231, 231, 231);
+  color: rgb(37, 37, 37);
+  border-radius: 35%;
+  border: 35%;
+  width: 100px;
+}
+
+#nextBtn{
+  background-color: rgb(91, 91, 91);
+  color: white;
+  border-radius: 35%;
+  width: 100px;
+}
+
