@@ -18,7 +18,7 @@ class Pawtastic extends React.Component {
     );
   }
 }
- 
+  
 export default Pawtastic;
 
 
