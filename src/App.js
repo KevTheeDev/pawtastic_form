@@ -33,7 +33,7 @@ handleSubmit(e){
             Name: 
             {/* capture what the user is inputing with ".value" */}
             {/* without onChange the values are not updated as the user types*/}
-          <input type='text' value={this.state.value} /> <input/>
+          <input type='text' onClick={ this.handleChange } />
           </label>
         </form>
 
