@@ -6,15 +6,21 @@ import React from 'react';
 class Pawtastic extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {  }
+    // have acccess to usr value
+    // add empty text because we are expecting text
+    this.state = { value: " :name" }
+
+
+
   }
   render() { 
     return (     
     <div className="App">
       <header className="App-header">
         <form>
-          {/* <input> let's see </input> */}
+
         </form>
+
         {/* <img src={logo}className="App-logo" alt="logo"/> */}
         <img src={WireframePAW}  alt="logo"/>
       </header>
