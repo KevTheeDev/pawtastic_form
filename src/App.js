@@ -31,63 +31,54 @@ render() {
 
           <form>
             <div className="formflexbox">
-              <p>Name</p>
-              <input id="formSub" placeholder="Pet Name" 
-              value={this.state.name} 
-              onChange={e => this.setState({name: e.target.value})} />
+                <p>Name</p>
+                <input id="formSub" placeholder="Pet Name" 
+                value={this.state.name} 
+                onChange={e => this.setState({name: e.target.value})} />
 
-              {/* 
-              // capture what user is inputing with ".value" 
-              // value = this.state.'value' 
-              // adds event listener (e)
-              // this.setState is used to change what's in state because if not it'll remain immutable 
-              // without onChange on Submit the values are not updated as the user types
-            */}
+                {/* 
+                // capture what user is inputing with ".value" 
+                // value = this.state.'value' 
+                // adds event listener (e)
+                // this.setState is used to change what's in state because if not it'll remain immutable 
+                // without onChange on Submit the values are not updated as the user types
+              */}
 
-              <p>Breed</p>
-              <input id="formSub" placeholder="Breed" 
-              value={this.state.breed} 
-              onChange={e => this.setState({breed: e.target.value})} />
+                <p>Breed</p>
+                <input id="formSub" placeholder="Breed" 
+                value={this.state.breed} 
+                onChange={e => this.setState({breed: e.target.value})} />
 
-              <p>Birthday</p>
-              <input id="formSub" placeholder="Birthday" 
-              value={this.state.birthday} 
-              onChange={e => this.setState({birthday: e.target.value})} />
+                <p>Birthday</p>
+                <input id="formSub" placeholder="Birthday" 
+                value={this.state.birthday} 
+                onChange={e => this.setState({birthday: e.target.value})} />
 
-              <p>Gender</p>
-              <input id="formSub" placeholder="Gender" 
-              value={this.state.gender} 
-              onChange={e => this.setState({gender: e.target.value})} />
+                <p>Gender</p>
+                <input id="formSub" placeholder="Gender" 
+                value={this.state.gender} 
+                onChange={e => this.setState({gender: e.target.value})} />
 
-              <p>Spayed or Neutered</p>
-              <input id="formSub" placeholder="Spayed or Neutered" 
-              value={this.state.spayed_Neutered} 
-              onChange={e => this.setState({spayed_Neutered: e.target.value})} />
+                <p>Spayed or Neutered</p>
+                <input id="formSub" placeholder="Spayed or Neutered" 
+                value={this.state.spayed_Neutered} 
+                onChange={e => this.setState({spayed_Neutered: e.target.value})} />
 
-              <p>Weight</p>
-              <input id="formSub" placeholder="Weight" 
-              value={this.state.weight} 
-              onChange={e => this.setState({weight: e.target.value})} />
+                <div className='weightBox'>
+                <p>Weight</p>
+                <input className='weightBox' id="formSub" placeholder="Weight" 
+                value={this.state.weight} 
+                onChange={e => this.setState({weight: e.target.value})} />
+                </div>
 
-            <div id="blackSide"></div>
-          </div>
+              <div id="blackSide"></div>
+            </div>
           </form>
             
             <div className='btnwrap'>          
               <button id="backBtn" >Back</button>
               <button id="nextBtn" >Next</button>
             </div>
-
-            <div className="row">
-  <div className="column" style={{color: 'white', backgroundColor: 'orange'}}>
-    <h2>Column 1</h2>
-    <p>Some text..</p>
-  </div>
-  <div className="column" style={{color: 'blue', backgroundColor: 'gray'}}>
-    <h2>Column 2</h2>
-    <p>Some text..</p>
-  </div>
-</div>
 
           <img id="PawWireframe" src={WireframePAW}  alt="logo"/>
         </div>
