@@ -64,14 +64,15 @@ render() {
                 value={this.state.spayed_Neutered} 
                 onChange={e => this.setState({spayed_Neutered: e.target.value})} />
 
-                <div className='weightBox'>
+ 
                 <p>Weight</p>
                 <input className='weightBox' id="formSub" placeholder="Weight" 
                 value={this.state.weight} 
                 onChange={e => this.setState({weight: e.target.value})} />
-                </div>
+
 
               <div id="blackSide"></div>
+              <div id='whiteColor'></div>
             </div>
           </form>
             
