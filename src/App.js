@@ -25,58 +25,60 @@ class Pawtastic extends React.Component {
   
 render() { 
   return (     
+
     <div>
-        <h1> Yay, we love dogs! Give us </h1>
-        <h1> the basics about your pup. </h1>
+        <form>
+          <div className="formflexbox">
+            <h1> Yay, we love dogs! Give us </h1>
+            <h1> the basics about your pup. </h1>
+                  <p>Name</p>
+                  <input id="formSub" placeholder="Pet Name" 
+                  value={this.state.name} 
+                  onChange={e => this.setState({name: e.target.value})} />
 
-          <form>
-            <div className="formflexbox">
-                <p>Name</p>
-                <input id="formSub" placeholder="Pet Name" 
-                value={this.state.name} 
-                onChange={e => this.setState({name: e.target.value})} />
+                  {/* 
+                  // capture what user is inputing with ".value" 
+                  // value = this.state.'value' 
+                  // adds event listener (e)
+                  // this.setState is used to change what's in state because if not it'll remain immutable 
+                  // without onChange on Submit the values are not updated as the user types
+                */}
 
-                {/* 
-                // capture what user is inputing with ".value" 
-                // value = this.state.'value' 
-                // adds event listener (e)
-                // this.setState is used to change what's in state because if not it'll remain immutable 
-                // without onChange on Submit the values are not updated as the user types
-              */}
+                <div id='whiteColorCircle'></div>
+                <p>Upload a photo</p>
+                
+                  <p>Breed</p>
+                  <input id="formSub" placeholder="Breed" 
+                  value={this.state.breed} 
+                  onChange={e => this.setState({breed: e.target.value})} />
 
-                <p>Breed</p>
-                <input id="formSub" placeholder="Breed" 
-                value={this.state.breed} 
-                onChange={e => this.setState({breed: e.target.value})} />
+                  <p>Birthday</p>
+                  <input id="formSub" placeholder="Birthday" 
+                  value={this.state.birthday} 
+                  onChange={e => this.setState({birthday: e.target.value})} />
 
-                <p>Birthday</p>
-                <input id="formSub" placeholder="Birthday" 
-                value={this.state.birthday} 
-                onChange={e => this.setState({birthday: e.target.value})} />
+                  <p>Gender</p>
+                  <input id="formSub" placeholder="Gender" 
+                  value={this.state.gender} 
+                  onChange={e => this.setState({gender: e.target.value})} />
 
-                <p>Gender</p>
-                <input id="formSub" placeholder="Gender" 
-                value={this.state.gender} 
-                onChange={e => this.setState({gender: e.target.value})} />
+                  <p>Spayed or Neutered</p>
+                  <input id="formSub" placeholder="Spayed or Neutered" 
+                  value={this.state.spayed_Neutered} 
+                  onChange={e => this.setState({spayed_Neutered: e.target.value})} />
 
-                <p>Spayed or Neutered</p>
-                <input id="formSub" placeholder="Spayed or Neutered" 
-                value={this.state.spayed_Neutered} 
-                onChange={e => this.setState({spayed_Neutered: e.target.value})} />
-
- 
-                <p>Weight</p>
-                <input className='weightBox' id="formSub" placeholder="Weight" 
-                value={this.state.weight} 
-                onChange={e => this.setState({weight: e.target.value})} />
+  
+                  <p>Weight</p>
+                  <input className='weightBox' id="formSub" placeholder="Weight" 
+                  value={this.state.weight} 
+                  onChange={e => this.setState({weight: e.target.value})} />
 
 
-              <div id="blackSide"></div>
-              <div id='whiteColorCircle'></div>
-              <div id='cameraCircle'>
-                <p>Camera</p>
+                  <div id="blackSide"></div>
+                  <div id='cameraCircle'>
+                    <p>PAWTASTIC</p>
+                  </div>
               </div>
-            </div>
           </form>
             
             <div className='btnwrap'>          
