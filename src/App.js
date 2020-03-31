@@ -73,10 +73,22 @@ render() {
           </div>
           </form>
             
-          <div className='btnwrap'>          
-          <button id="backBtn" >Back</button>
-          <button id="nextBtn" >Next</button>
-          </div>
+            <div className='btnwrap'>          
+              <button id="backBtn" >Back</button>
+              <button id="nextBtn" >Next</button>
+            </div>
+
+            <div className="row">
+  <div className="column" style={{color: 'white', backgroundColor: 'orange'}}>
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div className="column" style={{color: 'blue', backgroundColor: 'gray'}}>
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
           <img id="PawWireframe" src={WireframePAW}  alt="logo"/>
         </div>
           
