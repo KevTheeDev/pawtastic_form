@@ -25,12 +25,12 @@ class Pawtastic extends React.Component {
   
 render() { 
   return (     
-    <div className="formflexbox">
+    <div>
         <h1> Yay, we love dogs! Give us </h1>
         <h1> the basics about your pup. </h1>
 
           <form>
-            <div>
+            <div className="formflexbox">
               <p>Name</p>
               <input id="formSub" placeholder="Pet Name" 
               value={this.state.name} 
@@ -44,32 +44,32 @@ render() {
               // without onChange on Submit the values are not updated as the user types
             */}
 
-            <form>
               <p>Breed</p>
-              <input id="formSub" placeholder="Pet Name" 
+              <input id="formSub" placeholder="Breed" 
               value={this.state.breed} 
               onChange={e => this.setState({breed: e.target.value})} />
 
               <p>Birthday</p>
-              <input id="formSub" placeholder="Pet Name" 
+              <input id="formSub" placeholder="Birthday" 
               value={this.state.birthday} 
               onChange={e => this.setState({birthday: e.target.value})} />
 
               <p>Gender</p>
-              <input id="formSub" placeholder="Pet Name" 
+              <input id="formSub" placeholder="Gender" 
               value={this.state.gender} 
               onChange={e => this.setState({gender: e.target.value})} />
 
               <p>Spayed or Neutered</p>
-              <input id="formSub" placeholder="Pet Name" 
+              <input id="formSub" placeholder="Spayed or Neutered" 
               value={this.state.spayed_Neutered} 
               onChange={e => this.setState({spayed_Neutered: e.target.value})} />
 
               <p>Weight</p>
-              <input id="formSub" placeholder="Pet Name" 
+              <input id="formSub" placeholder="Weight" 
               value={this.state.weight} 
               onChange={e => this.setState({weight: e.target.value})} />
-            </form>
+
+            <div id="blackSide"></div>
           </div>
           </form>
             
