@@ -72,7 +72,10 @@ render() {
 
 
               <div id="blackSide"></div>
-              <div id='whiteColor'></div>
+              <div id='whiteColorCircle'></div>
+              <div id='cameraCircle'>
+                <p>Camera</p>
+              </div>
             </div>
           </form>
             

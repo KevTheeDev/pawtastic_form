@@ -47,6 +47,14 @@ h1{
 }
 
 
+#cameraCircle {
+  background-color: white;
+  border-radius: 30%;
+}
+#whiteColorCircle {
+  background-color: white;
+  border-radius: 30%;
+}
 
 .btnwrap{
   display: flex;
