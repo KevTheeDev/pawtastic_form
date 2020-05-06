@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import WireframePAW from './WireframePAW.png';
+import WireframePAW from './Wireframes/WireframePAW.png';
 import './App.css';
 import React from 'react';
 
